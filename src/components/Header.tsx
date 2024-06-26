@@ -7,7 +7,8 @@ import { FaVk, FaTelegramPlane, FaInfoCircle, FaRss } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
-const Header: React.FC = () => {
+
+export const Header: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
 
     const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -16,6 +17,7 @@ const Header: React.FC = () => {
         }
         setDrawerOpen(open);
     };
+
 
     const list = (
         <Box
@@ -82,14 +84,14 @@ const Header: React.FC = () => {
 
     return (
         <AppBar position="static" color="primary">
-            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <img src={logo} alt="Псковский Государственный Университет" style={{ height: 50, marginRight: 16 }} />
+            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '5px 0' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', margin: '16px 0' }}>
+                    <img src={logo} alt="Псковский Государственный Университет" style={{ height: 80, marginRight: 16 }} />
                     <Box>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="h6" component="div" >
                             Псковский Государственный Университет
                         </Typography>
-                        <Typography variant="body2" component="div" sx={{ fontSize: '12px' }}>
+                        <Typography variant="body2" component="div" sx={{ fontSize: '12px'}}>
                             Победитель программы Министерства науки и высшего образования РФ «Приоритет 2030» <br />
                             Победитель программы Министерства науки и высшего образования РФ «Передовые инженерные школы»
                         </Typography>
@@ -126,4 +128,4 @@ const Header: React.FC = () => {
     );
 };
 
-export default Header;
+
