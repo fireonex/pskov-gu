@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pskov-gu/static/css/main.1d766016.css",
+    "main.js": "/pskov-gu/static/js/main.35b7c416.js",
+    "static/media/photo-of-university.jpg": "/pskov-gu/static/media/photo-of-university.611f6e6fc7c50dc69d9e.jpg",
+    "static/media/logo.png": "/pskov-gu/static/media/logo.a9e174d782f54dadf1fd.png",
+    "index.html": "/pskov-gu/index.html",
+    "main.1d766016.css.map": "/pskov-gu/static/css/main.1d766016.css.map",
+    "main.35b7c416.js.map": "/pskov-gu/static/js/main.35b7c416.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d766016.css",
+    "static/js/main.35b7c416.js"
+  ]
+}
