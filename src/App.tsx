@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./components/Header";
-import UniversityInfo from "./components/UniversityInfo";
+import {Header} from "./components/header/Header";
+import UniversityInfo from "./components/university-info/UniversityInfo";
 
 function App() {
   return (

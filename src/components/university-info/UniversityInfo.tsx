@@ -1,7 +1,9 @@
 import React from 'react';
-import { Box, Typography, Container, Paper, List, ListItem, ListItemText, Link as MuiLink } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
-import photoOfUniversity from '../assets/photo-of-university.jpg';
+import {Box, Container, Link as MuiLink, List, ListItem, Paper, Typography} from '@mui/material';
+import {Link as RouterLink} from 'react-router-dom';
+import photoOfUniversity from '../../assets/photo-of-university.jpg';
+import {TextFromUniversityInfo} from "./TextFromUniversityInfo";
+
 
 const UniversityInfo: React.FC = () => {
     return (
@@ -46,28 +48,7 @@ const UniversityInfo: React.FC = () => {
                     Вуз отличается наличием богатой учебно-материальной базы: 22 учебно-лабораторных корпуса, 11 студенческих общежитий, Дом студента, включающий общежитие и медико-реабилитационный центр с университетской поликлиникой, бассейн «Универсант», Центр студенческой инженерной деятельности. В 2019 году ПсковГУ завершил создание ряда научных лабораторий по новым нанотехнологиям, инженерной экологии, рациональному природопользованию и экономической безопасности. Научными руководителями лабораторий стали ведущие ученые из Российской академии наук (РАН) и Московского государственного университета имени М.В. Ломоносова (МГУ). Уникальной особенностью новых лабораторий стало оснащение самым современным оборудованием.
                 </Typography>
 
-                <Box sx={{ mt: 4 }}>
-                    <Typography variant="h6" gutterBottom>
-                        Планы развития:
-                    </Typography>
-                    <List>
-                        <ListItem>
-                            <ListItemText primary="К 2030 году ПсковГУ на 100% закрывает кадровые потребности в педагогических работниках и руководителях школ региона, в том числе обеспечивая не менее 80% потребностей в дополнительном профессиональном образовании;" />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="Создана экосистема «адресной» подготовки абитуриентов под сетевые образовательные программы;" />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="Создан Российско-Белорусский образовательный центр поддержки и сопровождения талантливых школьников при ПсковГУ под приоритеты экономического развития и компетенции будущего;" />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="Реализуется пакет сетевых образовательных продуктов и сервисов совместно с партнерами сетевого университета по направлениям: медицина и здравоохранение, информационные технологии, инженерные технологии и системы, образование и гуманитаристика;" />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="Действует вариативная система подготовки научно-педагогических кадров и коллективов." />
-                        </ListItem>
-                    </List>
-                </Box>
+                <TextFromUniversityInfo/>
             </Paper>
         </Container>
     );
